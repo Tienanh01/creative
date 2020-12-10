@@ -1,0 +1,348 @@
+/* theme name : Creative
+theme description :
+author : Vũ Tien Anh
+version :1.0.0
+==============================Table of content ============================
+1. setting
+2. header
+
+========================================== 1, setting ========================= */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Merriweather", serif;
+  color: #212529;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ============================== 2 . header ============================== */
+.header {
+  padding: 16px;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 105;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header__menu-logo a {
+  color: #212519;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  margin-right: 16px;
+  color: #6c757d;
+}
+.header__menu .header__menu-list > ul {
+  display: flex;
+}
+.header__menu .header__menu-list .list__item {
+  padding-left: 16px;
+}
+.header__menu-logo a:hover{
+   color: #f4623a;
+}
+.list__item a:hover {
+  color: #f4623a;
+}
+.pd-3 {
+  padding-right: 16px;
+}
+@media screen and (min-width: 991px) {
+  .header .header__menu .header__menu-list {
+    display: flex;
+  }
+  .header .header__menu .header__menu-list .list__item .list__item-link {
+    font-size: 15.2px;
+    padding: 8px;
+    color:  #6c757d;
+  }
+  .header .header__menu .header__menu-list .list__item .list__item-link:hover {
+    color: #f4623a;
+  }
+  .logo__button-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo__button-menu {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #212519;
+    border-radius: 0.25rem;
+  }
+  .header .header__menu .header__menu-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__menu {
+    flex-wrap: wrap;
+  }
+}
+/* ============================ 3,masthead=========================== */
+.masthead {
+  background-image: url(../img/279547.jpg);
+  color: #ffffff;
+}
+.masthead__content {
+  padding: 160px 0 88px 0;
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.align-items-center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.divider {
+  max-width: 3.25rem;
+  border-width: 2px;
+  border-color: #f4623a;
+  text-align: center;
+  margin: 24px auto;
+}
+.masthead__content .text-lowercase {
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 1.15rem;
+  text-align: center;
+}
+.button-link {
+  padding: 20px 36px;
+  border-radius: 10rem;
+  color: #fff;
+  background-color: #f4623a;
+}
+.button-link:hover {
+  color: #fff;
+  background-color: #f24516;
+  border-color: #ee3e0d;
+}
+
+/* ============================= 4,ABOUT===================== */
+.about {
+  background-color: #f4623a;
+  padding: 8rem 0;
+  color: #fff;
+}
+.justify-content-center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.about .divider {
+  border-color: #fff;
+}
+.about .text-lowercase {
+  margin-bottom: 24px;
+}
+.button__link {
+  padding: 20px 36px;
+  width: 100%;
+  border-radius: 10rem;
+  background-color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* ============================= 5,services ======================= */
+.services {
+  color: #212519;
+  padding: 128px 0;
+}
+.services .text-uppercase {
+  text-transform: none;
+  text-align: center;
+  font-size: 32px;
+}
+.mt5 {
+  margin-top: 48px;
+}
+.services__icon {
+  margin-bottom: 1.5rem;
+}
+.services__icon i {
+  font-size: 4rem;
+
+  color: #f4623a;
+}
+.services__text-uppercase {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.services__text-lowercase {
+  font-family: "Nunito", sans-serif;
+}
+
+/* ====================================== 6, portfolio ============================== */
+@media screen and (min-width:992px){
+  .col-lg-4{
+    padding: 0px;
+  }
+}
+.portfolio .portfolio__item {
+  cursor: pointer;
+  position: relative;
+  display: block; 
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.portfolio .portfolio__item {
+  display: flex;
+  position: relative; 
+  overflow: hidden;
+}
+.portfolio .portfolio__item img{
+  width: 100%;
+}
+.portfolio__item-icon{
+  color: #fff;
+}
+.portfolio .portfolio__item .portfolio__item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #d6370c;
+}
+.portfolio__item .portfolio__item-icon {
+  background: #d6370c;;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio__item:hover .portfolio__item-icon {
+  opacity: 0.9;
+}
+.portfolio .portfolio__item i {
+  font-size: 72px;
+  color: white;
+}
+/* ==============================7 , CALL TO ME ================================== */
+.section {
+  padding: 8rem 0;
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+}
+.section__content-text {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+.section__content-button .button__link {
+  color: #212529;
+}
+.section__content-button .button__link:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+/* ============================== 8 , contact ============================= */
+.contact {
+  background-color: #ffffff;
+}
+.contact__content {
+  padding: 128px 0;
+}
+.contact__content-text {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.contact__content-lowercase {
+  margin-bottom: 48px;
+  color: #6c757d;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact__content-icon i {
+  font-size: 48px;
+  color: #6c757d;
+  margin-bottom: 16px;
+}
+.pd-3 {
+  padding: 0 15px;
+}
+.email__address .email__address-link {
+  color: #f4623a;
+}
+.email__address .email__address-link:hover {
+  color: #d6370c;
+  text-decoration: underline;
+}
+/* ============================== 9 footer =========================== */
+.footer {
+  background-color: #f8f9fa;
+ font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: center;
+  padding: 3rem 0;
+}
+@media only screen and (min-width: 570px){
+  .col-sm-6{
+    padding: 0px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+/* .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 50%;
+}
+ 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+ 
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+} */
